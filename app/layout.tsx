@@ -1,10 +1,11 @@
 import Bottombar from "@/components/Bottombar";
+import GlowingCircle from "@/components/GlowingCircle";
+import SelectionStyles from "@/components/SelectionStyles";
 import Sidebar from "@/components/Sidebar";
 import Topbar from "@/components/Topbar";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import SelectionStyles from "@/components/SelectionStyles";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -27,8 +28,8 @@ export default function RootLayout({
       <body
         className={`${poppins.className} antialiased p-2 h-screen w-screen flex flex-col overflow-hidden`}
       >
-        <SelectionStyles/>
-        <div className="w-full h-full border border-zinc-600 rounded-md  flex flex-col overflow-hidden">
+        <SelectionStyles />
+        <div className="w-full h-full border border-zinc-600 rounded-md flex flex-col overflow-hidden">
           <Topbar />
           <div className="flex h-full overflow-hidden">
             <Sidebar />
@@ -36,6 +37,7 @@ export default function RootLayout({
           </div>
           <Bottombar />
         </div>
+        <GlowingCircle/>
       </body>
     </html>
   );

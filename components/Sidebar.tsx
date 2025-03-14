@@ -4,10 +4,10 @@ import Link from "next/link";
 
 const Sidebar = () => {
   return (
-    <div className="border-r border-zinc-600 flex-col justify-center items-center sticky top-0 p-2 gap-4 sm:inline-flex hidden">
+    <div className="border-r bg-black/40 border-zinc-600 flex-col justify-center items-center sticky top-0 p-2 gap-4 md:inline-flex hidden">
       <Tooltip
         text="home"
-        background="bg-green-600/20"
+        background="bg-green-950"
         border="border-green-500"
         textColor="text-green-500"
         borderTag="border-r-green-500"
@@ -21,7 +21,7 @@ const Sidebar = () => {
       </Tooltip>
       <Tooltip
         text="about"
-        background="bg-blue-600/20"
+        background="bg-blue-950"
         border="border-blue-500"
         textColor="text-blue-500"
         borderTag="border-r-blue-500"
@@ -35,7 +35,7 @@ const Sidebar = () => {
       </Tooltip>
       <Tooltip
         text="skills"
-        background="bg-yellow-600/20"
+        background="bg-yellow-950"
         border="border-yellow-500"
         textColor="text-yellow-500"
         borderTag="border-r-yellow-500"
@@ -49,7 +49,7 @@ const Sidebar = () => {
       </Tooltip>
       <Tooltip
         text="projects"
-        background="bg-red-600/20"
+        background="bg-red-950"
         border="border-red-500"
         textColor="text-red-500"
         borderTag="border-r-red-500"
@@ -64,7 +64,7 @@ const Sidebar = () => {
 
       <Tooltip
         text="contact"
-        background="bg-teal-600/20"
+        background="bg-teal-950"
         border="border-teal-500"
         textColor="text-teal-500"
         borderTag="border-r-teal-500"

@@ -24,3 +24,17 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.glowing-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 384px; /* Tailwind w-96 */
+  height: 384px; /* Tailwind h-96 */
+  border-radius: 50%;
+  background: rgba(0, 255, 0, 0.5); /* Semi-transparent green background color */
+  filter: blur(10rem); /* Tailwind blur-2xl */
+  pointer-events: none;
+  transition: transform 0.1s ease-out;
+  z-index: -10;
+}
