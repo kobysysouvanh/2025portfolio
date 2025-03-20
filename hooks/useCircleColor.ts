@@ -4,7 +4,7 @@ const useCircleColor = () => {
   const pathname = usePathname();
 
   // Define text colors based on pathname
-  const textColors: { [key: string]: string } = {
+  const circleColor: { [key: string]: string } = {
     "/": "bg-green-400",
     "/about": "bg-blue-400",
     "/skills": "bg-yellow-400",
@@ -12,7 +12,11 @@ const useCircleColor = () => {
     "/contact": "bg-teal-400",
   };
 
-  return textColors[pathname] || "text-white";
+  if (pathname.startsWith("/projects")) {
+    return circleColor["/projects"];
+  }
+
+  return circleColor[pathname] || "text-white";
 };
 
 export default useCircleColor;

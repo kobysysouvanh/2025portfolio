@@ -21,7 +21,7 @@ const Bottombar = () => {
           bgColor="transparent"
           url="https://github.com/kobysysouvanh"
         />
-        <Link href={"/contact"} className={`flex border bg-black/15 border-zinc-600 rounded w-full justify-center cursor-pointer p-1  ${buttonColor.text} ${buttonColor.border} ${buttonColor.background} transition duration-500`}>
+        <Link href={"/contact"} className={`flex border bg-black/15 border-zinc-600 rounded w-full justify-center cursor-pointer p-1 hover:animate-pulse  ${buttonColor.text} ${buttonColor.border} ${buttonColor.background} transition duration-500`}>
           contact me
         </Link>
       </div>

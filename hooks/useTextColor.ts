@@ -12,6 +12,10 @@ const useTextColor = () => {
     "/contact": "text-teal-400",
   };
 
+  if (pathname.startsWith("/projects")) {
+    return textColors["/projects"];
+  }
+
   return textColors[pathname] || "text-white";
 };
 

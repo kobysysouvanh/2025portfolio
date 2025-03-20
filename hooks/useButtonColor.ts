@@ -12,6 +12,10 @@ const useButtonColor = () => {
     "/contact": { border: "hover:border-teal-400", text: "hover:text-teal-400", background: "hover:bg-teal-600/20" },
   };
 
+  if (pathname.startsWith("/projects")) {
+    return buttonColors["/projects"];
+  }
+
   return buttonColors[pathname];
 };
 

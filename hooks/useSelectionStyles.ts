@@ -13,6 +13,10 @@ const useSelectionStyles = () => {
     "/contact": "oklch(0.704 0.14 182.503)",
   };
 
+  if (pathname.startsWith("/projects")) {
+    return selectionStyles["/projects"];
+  }
+
   return selectionStyles[pathname];
 };
 
