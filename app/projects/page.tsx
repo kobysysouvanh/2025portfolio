@@ -65,7 +65,7 @@ const Projects = () => {
               </Link>
             </div>
             <div className="flex flex-col w-full justify-center items-center px-2">
-              <Link href="/projects/txt.io" className="flex justify-between items-center mt-6 border bg-black/15 border-zinc-600 rounded w-full md:w-3/5 px-6 py-16 cursor-pointer hover:md:scale-105 transition-all">
+              <Link href="/projects/txtio" className="flex justify-between items-center mt-6 border bg-black/15 border-zinc-600 rounded w-full md:w-3/5 px-6 py-16 cursor-pointer hover:md:scale-105 transition-all">
                 <div className="flex flex-col items-start">
                   <h1 className="text-xl md:text-4xl text-red-400">txt.io</h1>
                   <p className="text-start text-neutral-400 mt-4 text-sm md:text-md">

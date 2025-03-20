@@ -108,7 +108,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col w-full justify-center items-center px-2">
               <Link
-                href="/projects/txt.io"
+                href="/projects/txtio"
                 className="flex justify-between items-center mt-6 border bg-black/15 border-zinc-600 rounded w-full md:w-3/5 px-6 py-16 cursor-pointer hover:md:scale-105 transition-all"
               >
                 <div className="flex flex-col items-start">

@@ -17,7 +17,7 @@ const useSelectionStyles = () => {
     return selectionStyles["/projects"];
   }
 
-  return selectionStyles[pathname];
+  return selectionStyles[pathname] || "oklch(0.723 0.219 149.579)"; // Default color if no match found
 };
 
 export default useSelectionStyles;

@@ -16,7 +16,7 @@ const useCircleColor = () => {
     return circleColor["/projects"];
   }
 
-  return circleColor[pathname] || "text-white";
+  return circleColor[pathname] || circleColor["/"]; // Default color if no match found
 };
 
 export default useCircleColor;

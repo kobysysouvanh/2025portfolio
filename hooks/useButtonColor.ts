@@ -16,7 +16,7 @@ const useButtonColor = () => {
     return buttonColors["/projects"];
   }
 
-  return buttonColors[pathname];
+  return buttonColors[pathname] || buttonColors["/"]; // Default color if no match found
 };
 
 export default useButtonColor;
