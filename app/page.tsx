@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center w-full h-full overflow-hidden">
       <div className="w-full h-full overflow-y-auto px-2 overflow-x-hidden">
-        <div className="w-full h-full justify-center items-center flex flex-col text-center gap-4 relative">
+        <div className="w-full h-full justify-center items-center flex flex-col text-center gap-4">
           <motion.div
             ref={heroRef}
             initial={{ opacity: 0, scale: 0.5 }}
@@ -61,7 +61,7 @@ export default function Home() {
             </Link>
           </motion.div>
         </div>
-        <div className="w-full h-full justify-center items-center flex flex-col text-center ">
+        <div className="w-full  justify-center items-center flex flex-col text-center ">
           <motion.div
             ref={projectsRef}
             className="w-full h-full items-center flex flex-col text-center gap-4"
