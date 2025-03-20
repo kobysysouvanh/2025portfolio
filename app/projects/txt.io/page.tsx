@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 
-const txtio = () => {
+const Txtio = () => {
   const heroRef = useRef(null);
   const isHeroInView = useInView(heroRef, { once: false });
   const projectRef = useRef(null);
@@ -81,4 +81,4 @@ const txtio = () => {
     </div>
   );
 };
-export default txtio;
+export default Txtio;
