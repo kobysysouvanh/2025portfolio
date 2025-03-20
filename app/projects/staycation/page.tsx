@@ -1,10 +1,9 @@
 "use client";
 
-import Image from "next/image";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
-import Link from "next/link";
 import Badge from "@/components/Badge";
+import { motion, useInView } from "framer-motion";
+import Image from "next/image";
+import { useRef } from "react";
 
 const Staycation = () => {
   const heroRef = useRef(null);
