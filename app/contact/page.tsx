@@ -48,7 +48,7 @@ const Contact = () => {
             }
             transition={{ type: "spring", duration: 0.5, delay: 0.2 }}
           >
-            <h2 className="text-sm text-neutral-500">CONTACTS</h2>
+            <h2 className="text-sm text-neutral-500">CONTACT</h2>
             <div className="text-5xl md:text-7xl lg:text-8xl flex flex-col mt-10">
               <span>Interested in working</span>
               <span className="text-teal-400">
