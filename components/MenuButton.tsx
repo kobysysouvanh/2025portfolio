@@ -6,7 +6,6 @@ interface Props extends SVGMotionProps<SVGSVGElement> {
   color?: string;
   strokeWidth?: string | number;
   transition?: Transition;
-  lineProps?: any;
 }
 
 const MenuButton = ({
@@ -16,7 +15,6 @@ const MenuButton = ({
   strokeWidth = 1,
   color = "white",
   transition = undefined,
-  lineProps = null,
   ...props
 }: Props) => {
   const variant = isOpen ? "opened" : "closed";
@@ -48,14 +46,13 @@ const MenuButton = ({
     translateY:-2
     }
   };
-  lineProps = {
+  const lineProps = {
     stroke: color,
     strokeWidth: strokeWidth as number,
     vectorEffect: "non-scaling-stroke",
     initial: "closed",
     animate: variant,
     transition,
-    ...lineProps
   };
   const unitHeight = 4;
   const unitWidth = (unitHeight * (width as number)) / (height as number);
