@@ -6,7 +6,7 @@ import { SocialIcon } from "react-social-icons";
 const Bottombar = () => {
   const buttonColor = useButtonColor()
   return (
-    <div className="sticky bg-black/40 bottom-0 border-t border-zinc-600 flex justify-between items-center p-2 -z-10">
+    <div className="sticky bg-black/40 bottom-0 border-t border-zinc-600 flex justify-between items-center p-2 ">
       <p className="text-center w-full">Made with ❤️ by Koby Sysouvanh</p>
       <div className="hidden md:inline-flex justify-end items-center ml-auto gap-2 absolute right-2">
         <SocialIcon
