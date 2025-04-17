@@ -43,7 +43,7 @@ const Skills = () => {
             transition={{ type: "spring", duration: 0.5, delay: 0.2 }}
           >
             <div className="border-b border-zinc-600 text-lg text-center py-2">
-              &lt;skills/&gt;
+              skills
             </div>
             <div className="w-full h-[50%] flex gap-3 items-center justify-center flex-wrap p-4">
               <svg width={100} viewBox="0 0 128 128">

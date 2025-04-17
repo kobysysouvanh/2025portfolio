@@ -46,7 +46,7 @@ const About = () => {
             exit={{ opacity: 0, scale: 0.5 }}
           >
             <div className="border-b border-zinc-600 text-lg text-center py-2">
-            &lt;about-me/&gt;
+            about me
             </div>
             <div className="p-4 flex flex-col gap-2 text-xl">
               <span>

@@ -17,8 +17,8 @@ const Topbar = () => {
   return (
     <div className="bg-black/40 w-full flex justify-center items-center border-b border-zinc-600 py-2 text-lg sticky top-0">
           <MobileMenu isOpen={isOpen} closeMenu={closeMenu}/>
-        <p>Koby</p>
-        <p className={`${textColor} transition duration-500`}>&lt;Sysouvanh/&gt;</p>
+        <p>Koby&nbsp;</p>
+        <p className={`${textColor} transition duration-500`}>Sysouvanh</p>
         <div className="md:hidden absolute right-5 z-[1000]">
           <MenuButton
           isOpen={isOpen}
