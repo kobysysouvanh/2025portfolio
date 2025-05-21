@@ -62,13 +62,13 @@ const About = () => {
               <span>
                 <span className="text-neutral-400 font-bold mr-4">2</span>I am a{" "}
                 <span className="text-yellow-400">perfectionist</span> striving
-                to create the most{" "}
+                to bridge{" "}
                 <span className="text-purple-400">
                   {" "}
-                  aesthetically pleasing{" "}
+                  aesthetics{" "}
                 </span>
-                and <span className="text-purple-400">responsive websites</span>
-                .
+                and <span className="text-purple-400">functionality{" "}</span>
+                to websites.
               </span>
               <span>
                 <span className="text-neutral-400 font-bold mr-4">3</span>
