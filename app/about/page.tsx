@@ -32,9 +32,10 @@ const About = () => {
             </div>
           </motion.div>
         </div>
-        <div className="w-full h-[70%] items-center flex flex-col text-center gap-4 pt-20">
+        <div className="w-full h-full md:max-w-7xl md:mx-auto flex flex-col md:flex-row items-start justify-center gap-8 pt-20">
+          {/* About Me Section - Left */}
           <motion.div
-            className="border bg-black/10 border-zinc-600 rounded text-start"
+            className="border bg-black/10 border-zinc-600 rounded text-start w-full md:w-1/2"
             ref={aboutRef}
             initial={{ opacity: 0, scale: 0.5 }}
             animate={
@@ -46,7 +47,7 @@ const About = () => {
             exit={{ opacity: 0, scale: 0.5 }}
           >
             <div className="border-b border-zinc-600 text-lg text-center py-2">
-            about me
+              about me
             </div>
             <div className="p-4 flex flex-col gap-2 text-xl">
               <span>
@@ -78,35 +79,37 @@ const About = () => {
               </span>
             </div>
           </motion.div>
-        </div>
-        <motion.div
-          className="w-full h-full flex flex-col items-center justify-center text-center gap-4"
-          ref={resumeRef}
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={
-            isResumeInView
-              ? { opacity: 1, scale: 1 }
-              : { opacity: 0, scale: 0.5 }
-          }
-          transition={{ type: "spring", duration: 0.5, delay: 0.2 }}
-          exit={{ opacity: 0, scale: 0.5 }}
-        >
-          <Image
-            className="rounded"
-            src="/resume.png"
-            alt="My Resume"
-            width={550}
-            height={600}
-            unoptimized
-          />
-          <a
-            className="flex border bg-black/15 mt-6 border-zinc-600 rounded w-60 justify-center p-1 hover:bg-blue-950 hover:text-blue-400 hover:border-blue-400 transition duration-400"
-            href="/resume.pdf"
-            download="KobySysouvanh_Resume.pdf"
+
+          {/* Resume Section - Right */}
+          <motion.div
+            className="w-full md:w-1/2 flex flex-col items-center justify-center text-center gap-4"
+            ref={resumeRef}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={
+              isResumeInView
+                ? { opacity: 1, scale: 1 }
+                : { opacity: 0, scale: 0.5 }
+            }
+            transition={{ type: "spring", duration: 0.5, delay: 0.2 }}
+            exit={{ opacity: 0, scale: 0.5 }}
           >
-            grab a copy 
-          </a>
-        </motion.div>
+            <Image
+              className="rounded"
+              src="/resume.png"
+              alt="My Resume"
+              width={550}
+              height={600}
+              unoptimized
+            />
+            <a
+              className="flex border bg-black/15 mt-6 border-zinc-600 rounded w-60 justify-center p-1 hover:bg-blue-950 hover:text-blue-400 hover:border-blue-400 transition duration-400 mb-20"
+              href="/resume.pdf"
+              download="KobySysouvanh_Resume.pdf"
+            >
+              grab a copy
+            </a>
+          </motion.div>
+        </div>
       </div>
     </div>
   );
