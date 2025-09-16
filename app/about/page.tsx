@@ -95,7 +95,7 @@ const About = () => {
           >
             <Image
               className="rounded"
-              src="/resume.png"
+              src="/resume.jpg"
               alt="My Resume"
               width={550}
               height={600}
