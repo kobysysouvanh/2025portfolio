@@ -73,8 +73,13 @@ const About = () => {
               <span>
                 <span className="text-neutral-400 font-bold mr-4">3</span>
                 <span>
-                  I am a <span className="text-teal-400">team player</span> and
-                  believe I work best under collaboration
+                  I am a <span className="text-teal-400">team player</span> with the ability to also work solo.
+                </span>
+              </span>
+              <span>
+                <span className="text-neutral-400 font-bold mr-4">4</span>
+                <span>
+                  I have personal experience in <span className="text-pink-400">computers</span> and have <span className="text-red-400">built</span> and <span className="text-yellow-400">troubleshot</span> multiple PCs.
                 </span>
               </span>
             </div>
@@ -95,7 +100,7 @@ const About = () => {
           >
             <Image
               className="rounded"
-              src="/resume.jpg"
+              src="/resume.png"
               alt="My Resume"
               width={550}
               height={600}

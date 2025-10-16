@@ -47,11 +47,28 @@ const Projects = () => {
           >
             <div className="flex flex-col w-full justify-center items-center px-2">
               <h1 className="text-neutral-500">CLICK TO LEARN MORE</h1>
+              <Link href="/projects/prstatusboard" className="flex justify-between items-center mt-6 border bg-black/15 border-zinc-600 rounded w-full md:w-3/5 px-6 py-16 cursor-pointer hover:md:scale-105 transition-all">
+                <div className="flex flex-col items-start">
+                  <h1 className="text-xl md:text-4xl text-red-400">PR Status Board</h1>
+                  <p className="text-start text-neutral-400 mt-4 text-sm md:text-md">
+                    Retrieve and display GitHub pull request data
+                  </p>
+                  <div className="flex gap-2 mt-4 flex-wrap">
+                  <Badge>JavaScript</Badge> 
+                  <Badge>React.js</Badge> 
+                  <Badge>Vite</Badge>
+                  <Badge>GitHub REST API</Badge>
+                  </div>
+                </div>
+                <p className="text-lg md:text-xl text-neutral-400">2025</p>
+              </Link>
+            </div>
+            <div className="flex flex-col w-full justify-center items-center px-2">
               <Link href="/projects/gamedeals" className="flex justify-between items-center mt-6 border bg-black/15 border-zinc-600 rounded w-full md:w-3/5 px-6 py-16 cursor-pointer hover:md:scale-105 transition-all">
                 <div className="flex flex-col items-start">
                   <h1 className="text-xl md:text-4xl text-red-400">GameDeals</h1>
                   <p className="text-start text-neutral-400 mt-4 text-sm md:text-md">
-                    Games on Sale Finder
+                    Search for Game Deals and Discounts
                   </p>
                   <div className="flex gap-2 mt-4 flex-wrap">
                   <Badge>Next.js</Badge> 

@@ -111,7 +111,7 @@ const Contact = () => {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     rows={4}
-                    className="border rounded border-zinc-600 focus:outline-none focus:border-teal-400 p-2 transition-all duration-300"
+                    className="box-border border rounded border-zinc-600 focus:outline-none focus:border-teal-400 p-2 transition-colors duration-200 resize-y min-h-[6rem] md:min-h-[8rem] max-h-72 overflow-auto"
                     required
                   ></textarea>
                   </div>
